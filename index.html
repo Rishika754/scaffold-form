@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaffold Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>New Scaffold Entry</h1>
+    <p class="subtitle">Enter dimensions and billing details to create a new register record.</p>
+
+    <!-- SECTION 1 -->
+    <div class="card">
+        <h2>1. Classification</h2>
+
+        <div class="grid">
+            <div>
+                <label>Billing Basis</label>
+                <select>
+                    <option>Unit Rate</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Scaff Reg No / Tag</label>
+                <input type="text" placeholder="e.g. TWRP-C2A-01">
+            </div>
+
+            <div>
+                <label>Scaffold Type</label>
+                <select>
+                    <option>Select type</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Project</label>
+                <select>
+                    <option>Select project</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Location</label>
+                <input type="text" placeholder="e.g. Pit MH-54">
+            </div>
+
+            <div class="full">
+                <label>Description</label>
+                <textarea placeholder="Enter description"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="card">
+        <h2>2. Erection & Dismantlement</h2>
+
+        <div class="grid">
+            <input type="text" placeholder="Requested By">
+            <input type="date">
+            <input type="text" placeholder="Erected By">
+
+            <input type="date">
+            <input type="text" placeholder="Dismantled By">
+        </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="card">
+        <h2>3. Dimensions & Calculations</h2>
+
+        <div class="grid">
+            <input type="number" placeholder="Length">
+            <input type="number" placeholder="Width">
+            <input type="number" placeholder="Height">
+            <input type="number" placeholder="Quantity">
+        </div>
+
+        <div class="grid">
+            <input type="number" placeholder="Unit Rate">
+            <input type="text" placeholder="Total Amount" readonly>
+        </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="card">
+        <h2>4. Billing & References</h2>
+
+        <div class="grid">
+            <select>
+                <option>JCC Pending</option>
+            </select>
+
+            <input type="text" placeholder="PO Number">
+            <input type="text" placeholder="JCC Number">
+
+            <input type="text" placeholder="Invoice Number">
+
+            <textarea placeholder="Remarks"></textarea>
+        </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+        <button class="cancel">Cancel</button>
+        <button class="submit">Create Entry</button>
+    </div>
+
+</div>
+
+</body>
+</html>
